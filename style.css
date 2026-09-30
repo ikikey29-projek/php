@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.label {
+    letter-spacing: 4px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 60px 8%;
+}
+
+.container h2 {
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.price {
+    color: #60a5fa;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
